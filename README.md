@@ -1,2 +1,2 @@
 # Trackenator
-Game Tracker voor Xbox, Steam en PlayStation.
+Game Tracker voor Xbox en PlayStation.
