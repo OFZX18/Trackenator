@@ -24,6 +24,13 @@ header {
     text-align: left;
 }
 
+.square-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
 .logo {
     width: 100px;
     height: auto;

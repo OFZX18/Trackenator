@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last Played Game</title>
+    <link rel="stylesheet" href="Mini project2.css">
 </head>
 <body>
-    <h2>Last Played Game</h2>
+
+    <header>
+        <div class="logo-container">
+            <img src="Images/Trackenator.png" alt="Trackenator Logo" class="logo">
+            <h2>Last Played Game</h2>
+        </div>
+    
+        <a href="Mini project.html" class="home-button">Homepage</a>
+    </header>
+
+    <div class="game-info">
+        <button onclick="toggleProgress()">
+            <img src="Images/Halo.png" alt="Halo Infinite" class="square-image">
+        </button>
+
+        <div id="progress-details" style="display: none;">
+            <p>16 Levels Behaald</p>
+            <p>3 Uur Gespeeld</p>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <p>Progress: 89%</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleProgress() {
+            var progressDetails = document.getElementById('progress-details');
+            if (progressDetails.style.display === 'none' || progressDetails.style.display === '') {
+                progressDetails.style.display = 'block';
+            } else {
+                progressDetails.style.display = 'none';
+            }
+        }
+    </script>
+
 </body>
 </html>
