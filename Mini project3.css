@@ -88,7 +88,7 @@ h2 {
 }
 
 .progress-bar {
-    width: 72%; /* Adjusted for 72% progress */
+    width: 100%;
     height: 100%;
     background-color: #388e3c;
     border-radius: 5px;
@@ -97,5 +97,5 @@ h2 {
 p {
     font-size: 24px;
     margin: 10px 0;
-    color: #fff;
+    color: #f0e4e4;
 }

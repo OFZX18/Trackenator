@@ -34,9 +34,14 @@ header {
 }
 
 .logo {
-    width: 100px;
+    width: 200px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0;
 }
 
 .home-button {
