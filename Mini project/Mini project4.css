@@ -38,6 +38,19 @@ header {
     width: 100px;
     height: auto;
     margin-bottom: 10px;
+    animation: electricGlow 1.5s infinite alternate;
+}
+
+@keyframes electricGlow {
+    0% {
+        box-shadow: 0 0 8px green, 0 0 20px green, 0 0 30px green, 0 0 40px green;
+    }
+    50% {
+        box-shadow: 0 0 15px green, 0 0 30px green, 0 0 50px green, 0 0 80px green;
+    }
+    100% {
+        box-shadow: 0 0 8px green, 0 0 20px green, 0 0 30px green, 0 0 40px green;
+    }
 }
 
 h2 {
@@ -54,12 +67,31 @@ h2 {
     border-radius: 5px;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 50px;
 }
 
 .home-button:hover {
     background-color: rgb(39, 166, 0);
     color: white;
+    animation: waggle 0.5s ease-in-out infinite;
+}
+
+@keyframes waggle {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .square-image {
@@ -70,6 +102,11 @@ h2 {
     padding: 0;
     display: block;
     background-color: transparent;
+    transition: transform 0.4s ease-in-out;
+}
+
+.square-image:hover {
+    transform: scale(1.1);
 }
 
 .game-info {

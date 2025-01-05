@@ -26,6 +26,20 @@ header {
 .logo {
     width: 150px;
     height: auto;
+    margin-bottom: 10px;
+    animation: electricGlow 1.5s infinite alternate;
+}
+
+@keyframes electricGlow {
+    0% {
+        box-shadow: 0 0 8px green, 0 0 20px green, 0 0 30px green, 0 0 40px green;
+    }
+    50% {
+        box-shadow: 0 0 15px green, 0 0 30px green, 0 0 50px green, 0 0 80px green;
+    }
+    100% {
+        box-shadow: 0 0 8px green, 0 0 20px green, 0 0 30px green, 0 0 40px green;
+    }
 }
 
 header h2 {
@@ -90,8 +104,8 @@ button:hover {
 
 .home-button {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 40px;
+    right: 40px;
     padding: 15px 30px;
     font-size: 18px;
     color: rgb(39, 166, 0);
@@ -99,9 +113,29 @@ button:hover {
     border: 2px solid rgb(39, 166, 0);
     border-radius: 5px;
     z-index: 10;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .home-button:hover {
     background-color: rgb(39, 166, 0);
     color: white;
+    animation: waggle 0.5s ease-in-out infinite;
+}
+
+@keyframes waggle {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
