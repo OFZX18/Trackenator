@@ -3,18 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: black;
     color: rgb(39, 166, 0);
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
 }
-
 header {
     position: absolute;
     top: 30px;
@@ -50,6 +49,7 @@ header {
 header h2 {
     font-size: 3.5rem;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 header h3 {
@@ -85,4 +85,150 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.home-button {
+    font-size: 22px;
+    width: fit-content;
+    height: 40px;
+    color: rgb(39, 166, 0);
+    text-decoration: none;
+    padding: 12px 30px;
+    border: 2px solid rgb(39, 166, 0);
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.home-button:hover {
+    background-color: rgb(39, 166, 0);
+    color: white;
+    animation: waggle 0.5s ease-in-out infinite;
+}
+
+@keyframes waggle {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.square-image-home {
+    height: 150px;
+}
+
+.square-image {
+    width: 520px;
+    height: auto;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: transparent;
+    transition: transform 0.4s ease-in-out;
+}
+
+.square-image:hover {
+    transform: scale(1.1);
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.progress-container {
+    width: 300px;
+    background-color: rgb(39, 166, 0);
+    border-radius: 5px;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #388e3c;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.progress-bar-halo {
+    width: 89%;
+}
+
+.progress-bar-sot {
+    width: 100%;
+}
+
+.progress-bar-hzd {
+    width: 16%;
+}
+
+.contact-container {
+    background-color: rgb(17, 187, 17);
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(39, 166, 0);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(30, 130, 0);
 }
