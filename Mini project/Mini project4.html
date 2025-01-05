@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Zero Dawn Progress</title>
+    <link rel="stylesheet" href="Mini project4.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="Images/Trackenator.png" alt="Trackenator Logo" class="logo">
+            <h2>PlayStation Progress</h2>
+            <h2>Horizon Zero Dawn</h2>
+        </div>
+        <a href="Mini project.html" class="home-button">Homepage</a>
+    </header>
+
+    <div class="game-info">
+        <button onclick="toggleProgress()">
+            <img src="Images/HZD.png" alt="Horizon Zero Dawn" class="square-image">
+        </button>
+
+        <div id="progress-details" style="display: none;">
+            <p>Rookie machine slayer</p>
+            <p>8 Hours played</p>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <p>Progress: 16%</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleProgress() {
+            var progressDetails = document.getElementById('progress-details');
+            if (progressDetails.style.display === 'none' || progressDetails.style.display === '') {
+                progressDetails.style.display = 'block';
+            } else {
+                progressDetails.style.display = 'none';
+            }
+        }
+    </script>
+    
+
+</body>
+</html>
